@@ -1,17 +1,20 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
+    <NavBar></NavBar>
     <router-view/>
     <FootBar></FootBar>
   </div>
 </template>
 
 <script>
-import FootBar from "@/components/FootBar";
+import NavBar from "./components/NavBar";
+import FootBar from "./components/FootBar";
 
 export default {
   name: "App",
   components: {
+    "NavBar": NavBar,
     "FootBar": FootBar
   }
 };
